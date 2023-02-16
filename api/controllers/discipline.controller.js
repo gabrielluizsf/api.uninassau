@@ -8,8 +8,8 @@ import {
  
  export const create = async (req, res) => {
      try {
-         const { banner, title, text } = req.body;
-         if (!title || !banner || !text) {
+         const { banner, title } = req.body;
+         if (!title || !banner ) {
              res.status(400).send({
                  message: "Submit All Fields for Registration"
              });
@@ -17,7 +17,6 @@ import {
          await createService({
              banner,
              title,
-             text,
              professor: req.professorId
  
          })

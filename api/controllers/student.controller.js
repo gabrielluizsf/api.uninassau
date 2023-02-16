@@ -35,7 +35,7 @@ const create = async (req, res) => {
 }
 
 
-const findAllstudents = async (req, res) => {
+const findAllStudents = async (req, res) => {
    try {
       const students = await studentService.findAllService();
       if (students.length === 0) {
@@ -54,7 +54,7 @@ const findById = async (req, res) => {
     res.status(500).send({ message: err.message });
    };
 }
-const updatestudentById = async (req, res) => {
+const updateStudentById = async (req, res) => {
    try {
       const {
         name, 
@@ -109,4 +109,4 @@ export const deleter = async(req,res)=>{
         res.status(500).send({message:err.message});
       }
     }
-export default { create, findAllstudents, findById, updatestudentById, deleter };
+export default { create, findAllStudents, findById, updateStudentById, deleter };

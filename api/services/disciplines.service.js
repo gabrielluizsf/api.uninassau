@@ -1,4 +1,4 @@
-import Discipline from "../database/models/Discipline";
+import Discipline from "../database/models/Discipline.js";
 
 const createService = (body) => Discipline.create(body);
 

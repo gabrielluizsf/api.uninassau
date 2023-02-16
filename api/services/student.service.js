@@ -1,4 +1,4 @@
-import Student from '../database/models/Students';
+import Student from '../database/models/Students.js';
 
 export const createService   = (body)=> Student.create(body);
 export const findAllService  = ()=> Student.find();

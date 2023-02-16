@@ -1,4 +1,4 @@
-import Professor from '../database/models/Professor';
+import Professor from '../database/models/Professor.js';
 
 export const createService   = (body)=> Professor.create(body);
 export const findAllService  = ()=> Professor.find();

@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { findByIdService } from "../services/discipline.service.js";
+import { findByIdService } from "../services/disciplines.service.js";
 import professorService from "../services/professor.service.js";
 import studentService from "../services/student.service.js";
 

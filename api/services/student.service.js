@@ -15,6 +15,15 @@ weekDays,
 yearsProgramming
 )=> Student.findOneAndUpdate(
     { _id: id }, 
-    {name,username,email,password,avatar,background}
+    {
+        name,
+        matricula,
+        password,
+        hourEnd,
+        hourStart,
+        useVoiceChannel,
+        weekDays,
+        yearsProgramming
+    }
 );
 export const deleteService = (id)=>Student.findOneAndDelete({_id: id});
